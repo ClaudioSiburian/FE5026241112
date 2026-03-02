@@ -1,0 +1,62 @@
+body {
+            background-color: #e6f2ff;
+        }
+        p   {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+        
+        #bikinjaditengah {
+            text-align: center;
+            font-size: xx-small;
+        }
+        
+        .judulBerita {
+            text-align: center;
+            font-size: large;
+            color: blue;
+            font-weight: bold;
+        }
+        
+        .judulGambar {
+            text-align: center;
+            font-size: x-small;
+            font-weight: bold;
+        }
+
+        .footerbold {
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        a:link {
+            text-decoration: none;
+            color: aqua;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: red
+        }
+
+        a:visited {
+            text-decoration: none;
+            color: gold
+        }
+
+        .formatGambar {
+            border-radius: 20px;
+        }
+
+        .gambarTengah{
+            
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%; 
+        }
+        
+
+        .C{
+            margin-left: 100px;
+            margin-right: 100px;
+        }
