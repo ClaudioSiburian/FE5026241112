@@ -1,163 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 
 <head>
     <meta charset="UTF-8">
     <title>Clients Love Us</title>
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <style>
         body {
-            background: #dcdcdc;
+            background: #e9ecef; /* Background luar abu-abu terang */
             font-family: Arial, sans-serif;
+            padding: 50px 0;
         }
 
+        /* Pembungkus Utama agar putih dan abu bawah menyatu */
+        .content-wrapper {
+            max-width: 900px; /* Atur lebar maksimal kotak */
+            margin: 0 auto;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            overflow: hidden; /* Agar sudut tajam/melingkar rapi */
+        }
+
+        /* Bagian Atas (Putih) */
         .main-box {
-            background: #f7f7f7;
-            padding: 60px;
-            margin: 80px auto;
+            background: #ffffff;
+            padding: 60px 80px;
         }
 
         .title {
             text-align: center;
             margin-bottom: 50px;
+            letter-spacing: 1px;
         }
 
         .testimonial {
             display: flex;
+            align-items: flex-start;
             margin-bottom: 40px;
         }
 
-        .icon {
-            width: 50px;
-            height: 50px;
-            background: #e0e0e0;
+        .photo, .icon {
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
-            margin-right: 15px;
+            background: #eee;
+            margin-right: 20px;
+            flex-shrink: 0; /* Agar gambar tidak gepeng */
+            object-fit: cover;
         }
 
         .text {
             font-size: 14px;
-            color: #555;
+            color: #666;
+            font-style: italic;
+            line-height: 1.6;
         }
 
         .name {
             font-weight: bold;
             margin-top: 10px;
             font-size: 13px;
+            text-transform: uppercase;
         }
 
         .role {
             font-size: 11px;
-            color: gray;
+            color: #999;
         }
 
+        /* Bagian Bawah (Abu-abu) */
         .logo-area {
-            background: #e6e6e6;
-            padding: 30px;
-            margin-top: 40px;
+            background: #f1f1f1;
+            padding: 40px 20px;
+            border-top: 1px solid #eee;
         }
 
         .logo {
             text-align: center;
-            color: #888;
+            color: #aaa;
             font-size: 12px;
-        }
-
-        .photo {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            margin-right: 15px;
+            font-weight: bold;
+            text-transform: uppercase;
         }
     </style>
-
 </head>
 
 <body>
 
-    <div class="container">
-
+    <div class="content-wrapper">
         <div class="main-box">
-
             <div class="title">
-                <h4>Meet our team.</h4>
+                <h4>Our clients love us.</h4>
             </div>
 
             <div class="row">
-
                 <div class="col-md-6">
                     <div class="testimonial">
                         <div class="icon"></div>
                         <div>
-                            <div class="text">
-                                Lorem ipsum dolor sit amet, adipiscing elit.
-                            </div>
-                            <div class="name">TIM SILVA</div>
+                            <div class="text">"Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor."</div>
+                            <div class="name">Tim Silva</div>
                             <div class="role">CEO of Company</div>
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-6">
                     <div class="testimonial">
                         <div class="icon"></div>
                         <div>
-                            <div class="text">
-                                Lorem ipsum dolor sit amet, adipiscing elit.
-                            </div>
-                            <div class="name">TIM SILVA</div>
+                            <div class="text">"Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor."</div>
+                            <div class="name">Tim Silva</div>
                             <div class="role">CEO of Company</div>
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-6">
                     <div class="testimonial">
                         <div class="icon"></div>
                         <div>
-                            <div class="text">
-                                Lorem ipsum dolor sit amet, adipiscing elit.
-                            </div>
-                            <div class="name">TIM SILVA</div>
+                            <div class="text">"Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor."</div>
+                            <div class="name">Tim Silva</div>
                             <div class="role">CEO of Company</div>
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-6">
                     <div class="testimonial">
                         <div class="icon"></div>
                         <div>
-                            <div class="text">
-                                Lorem ipsum dolor sit amet, adipiscing elit.
-                            </div>
-                            <div class="name">TIM SILVA</div>
+                            <div class="text">"Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor."</div>
+                            <div class="name">Tim Silva</div>
                             <div class="role">CEO of Company</div>
                         </div>
                     </div>
-                </div>
-
-            </div>
-
-
-            <div class="logo-area">
-                <div class="row">
-
-                    <div class="col logo">LOGO 1</div>
-                    <div class="col logo">LOGO 2</div>
-                    <div class="col logo">LOGO 3</div>
-                    <div class="col logo">LOGO 4</div>
-                    <div class="col logo">LOGO 5</div>
-
                 </div>
             </div>
-
         </div>
 
+        <div class="logo-area">
+            <div class="row no-gutters">
+                <div class="col logo">Logo 1</div>
+                <div class="col logo">Logo 2</div>
+                <div class="col logo">Logo 3</div>
+                <div class="col logo">Logo 4</div>
+                <div class="col logo">Logo 5</div>
+            </div>
+        </div>
     </div>
 
 </body>
-
 </html>
