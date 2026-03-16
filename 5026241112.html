@@ -3,84 +3,94 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Clients Love Us</title>
+    <title>Meet Our Team</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <style>
         body {
-            background: #e9ecef; /* Background luar abu-abu terang */
+            background: #dcdcdc;
             font-family: Arial, sans-serif;
-            padding: 50px 0;
+            margin: 0;
+            padding: 0;
         }
 
-        /* Pembungkus Utama agar putih dan abu bawah menyatu */
         .content-wrapper {
-            max-width: 900px; /* Atur lebar maksimal kotak */
-            margin: 0 auto;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            overflow: hidden; /* Agar sudut tajam/melingkar rapi */
+            margin: 80px 0;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
         }
 
-        /* Bagian Atas (Putih) */
         .main-box {
             background: #ffffff;
-            padding: 60px 80px;
+            padding: 80px 0;
         }
 
         .title {
             text-align: center;
-            margin-bottom: 50px;
-            letter-spacing: 1px;
+            margin-bottom: 60px;
+        }
+
+        .title h4 {
+            font-size: 28px;
+            letter-spacing: 0.5px;
         }
 
         .testimonial {
             display: flex;
             align-items: flex-start;
-            margin-bottom: 40px;
+            margin-bottom: 50px;
         }
 
-        .photo, .icon {
-            width: 60px;
-            height: 60px;
+        .photo,
+        .icon {
+            width: 70px;
+            height: 70px;
             border-radius: 50%;
-            background: #eee;
-            margin-right: 20px;
-            flex-shrink: 0; /* Agar gambar tidak gepeng */
+            margin-right: 25px;
+            flex-shrink: 0;
             object-fit: cover;
+            background: #e0e0e0;
+        }
+
+        .text-content {
+            flex-grow: 1;
         }
 
         .text {
             font-size: 14px;
-            color: #666;
-            font-style: italic;
+            color: #555;
             line-height: 1.6;
+            margin-bottom: 8px;
         }
 
         .name {
             font-weight: bold;
-            margin-top: 10px;
             font-size: 13px;
             text-transform: uppercase;
+            color: #333;
         }
 
         .role {
             font-size: 11px;
-            color: #999;
+            color: gray;
         }
 
-        /* Bagian Bawah (Abu-abu) */
         .logo-area {
             background: #f1f1f1;
-            padding: 40px 20px;
+            padding: 50px 0;
             border-top: 1px solid #eee;
         }
 
-        .logo {
-            text-align: center;
-            color: #aaa;
-            font-size: 12px;
-            font-weight: bold;
-            text-transform: uppercase;
+        .logo-col {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo-img {
+            max-height: 35px;
+            width: auto;
+            filter: grayscale(100%);
+            opacity: 0.6;
         }
     </style>
 </head>
@@ -89,48 +99,59 @@
 
     <div class="content-wrapper">
         <div class="main-box">
-            <div class="title">
-                <h4>Our clients love us.</h4>
-            </div>
+            <div class="container">
+                <div class="title">
+                    <h4>Meet our team.</h4>
+                </div>
 
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="testimonial">
-                        <div class="icon"></div>
-                        <div>
-                            <div class="text">"Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor."</div>
-                            <div class="name">Tim Silva</div>
-                            <div class="role">CEO of Company</div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="testimonial">
+                            <img src="https://asset.kompas.com/crops/MdEZZcFYItIBmM808EQXOrL6_L0=/0x0:4664x3109/1200x800/data/photo/2025/03/04/67c6a70245c01.jpg"
+                                class="photo" alt="Foto Tim">
+                            <div class="text-content">
+                                <div class="text">The face of the company.</div>
+                                <div class="name">Bahlil Lahadalia</div>
+                                <div class="role">CEO of Company</div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="testimonial">
-                        <div class="icon"></div>
-                        <div>
-                            <div class="text">"Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor."</div>
-                            <div class="name">Tim Silva</div>
-                            <div class="role">CEO of Company</div>
+
+                    <div class="col-md-6">
+                        <div class="testimonial">
+                            <img src="https://assets.promediateknologi.id/crop/0x0:0x0/1200x0/webp/photo/p3/104/2025/10/17/Screenshot_2025-10-17-10-38-02-42_1c337646f29875672b5a61192b9010f9-2244174163.jpg"
+                                class="photo" alt="Foto Tim">
+                            <div class="text-content">
+                                <div class="text">Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore.</div>
+                                <div class="name">Natalius Pigai</div>
+                                <div class="role">COO of Company</div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="testimonial">
-                        <div class="icon"></div>
-                        <div>
-                            <div class="text">"Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor."</div>
-                            <div class="name">Tim Silva</div>
-                            <div class="role">CEO of Company</div>
+
+                    <div class="col-md-6">
+                        <div class="testimonial">
+                            <img src="https://sinpo.id/storage/2024/11/projo-budi-arie-justru-korban-pengkhianatan-pegawai-komdigi-09112024-170219.jpg"
+                                class="photo" alt="Foto Tim">
+                            <div class="text-content">
+                                <div class="text">Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore.</div>
+                                <div class="name">Arie Budie</div>
+                                <div class="role">CEO of Company</div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="testimonial">
-                        <div class="icon"></div>
-                        <div>
-                            <div class="text">"Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor."</div>
-                            <div class="name">Tim Silva</div>
-                            <div class="role">CEO of Company</div>
+
+                    <div class="col-md-6">
+                        <div class="testimonial">
+                            <img src="foto-4.jpg" class="photo" alt="Foto Tim">
+                            <div class="text-content">
+                                <div class="text">Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore.</div>
+                                <div class="name">TIM SILVA</div>
+                                <div class="role">CEO of Company</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -138,15 +159,28 @@
         </div>
 
         <div class="logo-area">
-            <div class="row no-gutters">
-                <div class="col logo">Logo 1</div>
-                <div class="col logo">Logo 2</div>
-                <div class="col logo">Logo 3</div>
-                <div class="col logo">Logo 4</div>
-                <div class="col logo">Logo 5</div>
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col logo-col">
+                        <img src="logo-1.png" class="logo-img" alt="Logo 1">
+                    </div>
+                    <div class="col logo-col">
+                        <img src="logo-2.png" class="logo-img" alt="Logo 2">
+                    </div>
+                    <div class="col logo-col">
+                        <img src="logo-3.png" class="logo-img" alt="Logo 3">
+                    </div>
+                    <div class="col logo-col">
+                        <img src="logo-4.png" class="logo-img" alt="Logo 4">
+                    </div>
+                    <div class="col logo-col">
+                        <img src="logo-5.png" class="logo-img" alt="Logo 5">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
 </body>
+
 </html>
